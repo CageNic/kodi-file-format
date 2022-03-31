@@ -8,6 +8,9 @@
 
 #!/bin/bash
 
+# don't use command substitution - complicates the spaces in file names
+# don't do this - for i in $(ls *.mp4)
+
 for i in *.mp4
 do
 
