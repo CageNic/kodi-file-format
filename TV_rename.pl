@@ -13,7 +13,7 @@ use File::Copy;
 my $dir = '.';
 opendir (my $dh, $dir) or die "Could not open '$dir' for reading '$!'\n";
 while (my $thing = readdir $dh) {
- next if $thing eq '.' or $thing eq '..');
+ next if $thing eq '.' or $thing eq '..';
  my $new_thing;
   if ($thing =~ m/\.mp4$/) {
 	  my @array = split (/-/,$thing);
